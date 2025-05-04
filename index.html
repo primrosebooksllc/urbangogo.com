@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Writing Portfolio</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            margin: 20px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #000;
+            background-color: #eee;
+            border-radius: 4px;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: 7fr 3fr;
+            }
+        }
+        
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .sidebar {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            align-self: start;
+        }
+        
+        article {
+            margin-bottom: 40px;
+        }
+        
+        article h2 {
+            margin-bottom: 10px;
+        }
+        
+        .meta {
+            color: #777;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 15px;
+        }
+        
+        .tag {
+            background: #eee;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        
+        .translation-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        @media (min-width: 992px) {
+            .translation-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .original, .translation {
+            padding: 15px;
+            border-radius: 6px;
+        }
+        
+        .original {
+            background-color: #f0f5ff;
+        }
+        
+        .translation {
+            background-color: #fff8f0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+        
+        /* Utility classes */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Writing Portfolio</h1>
+            <p>Original writing and fan fiction translations</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#original">Original Writing</a></li>
+                <li><a href="#fanfiction">Fan Fiction</a></li>
+                <li><a href="#translations">Translations</a></li>
+                <li><a href="#about">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <main>
+            <div class="content">
+                <section id="original">
+                    <h2>Original Writing</h2>
+                    
+                    <article>
+                        <h3>The Last Sunset</h3>
+                        <div class="meta">Published on May 1, 2025 • Short Story</div>
+                        <p>
+                            She watched as the sun dipped below the horizon, painting the sky in shades of orange and pink. This would be the last sunset she'd see from this window, in this home that had held her memories for the past decade.
+                        </p>
+                        <p>
+                            [Your story content would continue here...]
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Fiction</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Short Story</span>
+                        </div>
+                        <p><a href="#" class="btn">Read More</a></p>
+                    </article>
+                    
+                    <!-- More original writing entries -->
+                </section>
+                
+                <section id="fanfiction">
+                    <h2>Fan Fiction</h2>
+                    
+                    <article>
+                        <h3>Beyond the Stars: A Cosmic Journey</h3>
+                        <div class="meta">Published on April 15, 2025 • Fan Fiction • Based on "Star Voyager" universe</div>
+                        <p>
+                            Captain Elara stood on the bridge of the Intrepid, staring into the vast expanse of space that stretched before them. The anomaly they had been tracking for weeks had finally appeared on their sensors.
+                        </p>
+                        <p>
+                            [Your fan fiction content would continue here...]
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Science Fiction</span>
+                            <span class="tag">Adventure</span>
+                            <span class="tag">Star Voyager</span>
+                        </div>
+                        <p><a href="#" class="btn">Read More</a></p>
+                    </article>
+                    
+                    <!-- More fan fiction entries -->
+                </section>
+                
+                <section id="translations">
+                    <h2>Translations</h2>
+                    
+                    <article>
+                        <h3>The Forgotten Hero</h3>
+                        <div class="meta">Original by AuthorName • Translated on April 10, 2025</div>
+                        
+                        <div class="translation-container">
+                            <div class="original">
+                                <h4>Original Text</h4>
+                                <p>
+                                    [Original text in source language would go here]
+                                </p>
+                            </div>
+                            <div class="translation">
+                                <h4>My Translation</h4>
+                                <p>
+                                    [Your translation would go here]
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="tags">
+                            <span class="tag">Translation</span>
+                            <span class="tag">Fantasy</span>
+                            <span class="tag">[Source Language]</span>
+                        </div>
+                        <p><a href="#" class="btn">Read Full Translation</a></p>
+                    </article>
+                    
+                    <!-- More translation entries -->
+                </section>
+            </div>
+            
+            <aside class="sidebar">
+                <section id="about">
+                    <h3>About Me</h3>
+                    <p>
+                        Welcome to my writing portfolio! I'm a passionate writer and translator with a love for storytelling in all its forms. Here you'll find my original works alongside translations of fan fiction that I've enjoyed.
+                    </p>
+                </section>
+                
+                <section>
+                    <h3>Recent Updates</h3>
+                    <ul>
+                        <li>Added new short story: "The Last Sunset" - May 1, 2025</li>
+                        <li>New translation: "The Forgotten Hero" - April 10, 2025</li>
+                        <li>Updated fan fiction: "Beyond the Stars" - April 15, 2025</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Short Stories</a></li>
+                        <li><a href="#">Poetry</a></li>
+                        <li><a href="#">Science Fiction</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Drama</a></li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Contact</h3>
+                    <p>Have questions or feedback? Feel free to reach out to me at:</p>
+                    <p>email@example.com</p>
+                </section>
+            </aside>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Writing Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
